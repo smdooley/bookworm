@@ -25,8 +25,6 @@ struct AddBookView: View {
     // Possible genre options
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
-    
-    
     var body: some View {
         NavigationStack {
             Form {
@@ -43,12 +41,7 @@ struct AddBookView: View {
 
                 Section("Write a review") {
                     TextEditor(text: $review)
-
-                    Picker("Rating", selection: $rating) {
-                        ForEach(0..<6) {
-                            Text(String($0))
-                        }
-                    }
+                    RatingView(rating: $rating)
                 }
 
                 Section {
