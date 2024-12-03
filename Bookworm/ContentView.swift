@@ -13,7 +13,21 @@ struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     
     // Query to read all the books
-    @Query var books: [Book]
+    //@Query var books: [Book]
+    
+    // Sort by alphabetical order
+    //@Query(sort: \Book.title) var books: [Book]
+    //@Query(sort: [SortDescriptor(\Book.title)]) var books: [Book]
+    //@Query(sort: [SortDescriptor(\Book.title, order: .reverse)]) var books: [Book]
+    
+    // Sort by rating, highest to lowest
+    //@Query(sort: \Book.rating, order: .reverse) var books: [Book]
+    
+    // Sort by title then author
+    @Query(sort: [
+        SortDescriptor(\Book.title),
+        SortDescriptor(\Book.author)
+    ]) var books: [Book]
     
     // Track whether the sheet is showing
     @State private var showingAddScreen = false
