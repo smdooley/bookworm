@@ -12,6 +12,7 @@
 		E45EC37F2CFF3CCA00B6FD34 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45EC37E2CFF3CCA00B6FD34 /* RatingView.swift */; };
 		E45EC3812CFF3FBC00B6FD34 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45EC3802CFF3FBC00B6FD34 /* EmojiRatingView.swift */; };
 		E45EC3832CFF42A900B6FD34 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45EC3822CFF42A900B6FD34 /* DetailView.swift */; };
+		E45EC3852D008D6600B6FD34 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45EC3842D008D6600B6FD34 /* Extensions.swift */; };
 		E463A0B12CFF1B5A00744481 /* BookwormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463A0B02CFF1B5A00744481 /* BookwormApp.swift */; };
 		E463A0B32CFF1B5A00744481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463A0B22CFF1B5A00744481 /* ContentView.swift */; };
 		E463A0B52CFF1B5E00744481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E463A0B42CFF1B5E00744481 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		E45EC37E2CFF3CCA00B6FD34 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		E45EC3802CFF3FBC00B6FD34 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		E45EC3822CFF42A900B6FD34 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E45EC3842D008D6600B6FD34 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E463A0AD2CFF1B5A00744481 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E463A0B02CFF1B5A00744481 /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
 		E463A0B22CFF1B5A00744481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,7 +47,6 @@
 		E463A0A42CFF1B5A00744481 = {
 			isa = PBXGroup;
 			children = (
-				E45EC37A2CFF225E00B6FD34 /* Book.swift */,
 				E463A0AF2CFF1B5A00744481 /* Bookworm */,
 				E463A0AE2CFF1B5A00744481 /* Products */,
 			);
@@ -70,6 +71,8 @@
 				E45EC37C2CFF22D100B6FD34 /* AddBookView.swift */,
 				E45EC37E2CFF3CCA00B6FD34 /* RatingView.swift */,
 				E45EC3802CFF3FBC00B6FD34 /* EmojiRatingView.swift */,
+				E45EC37A2CFF225E00B6FD34 /* Book.swift */,
+				E45EC3842D008D6600B6FD34 /* Extensions.swift */,
 			);
 			path = Bookworm;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				E463A0B32CFF1B5A00744481 /* ContentView.swift in Sources */,
 				E463A0B12CFF1B5A00744481 /* BookwormApp.swift in Sources */,
 				E45EC37B2CFF225E00B6FD34 /* Book.swift in Sources */,
+				E45EC3852D008D6600B6FD34 /* Extensions.swift in Sources */,
 				E45EC3832CFF42A900B6FD34 /* DetailView.swift in Sources */,
 				E45EC37F2CFF3CCA00B6FD34 /* RatingView.swift in Sources */,
 				E45EC3812CFF3FBC00B6FD34 /* EmojiRatingView.swift in Sources */,

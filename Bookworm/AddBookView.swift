@@ -25,6 +25,10 @@ struct AddBookView: View {
     // Possible genre options
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
+    var disableForm: Bool {
+        title.isBlank || author.isBlank || genre.isBlank || review.isBlank
+    }
+    
     var body: some View {
         NavigationStack {
             Form {
@@ -54,6 +58,7 @@ struct AddBookView: View {
                         dismiss()
                     }
                 }
+                .disabled(disableForm)
             }
             .navigationTitle("Add Book")
         }

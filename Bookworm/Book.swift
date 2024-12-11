@@ -23,4 +23,12 @@ class Book {
         self.review = review
         self.rating = rating
     }
+    
+//    var isValid: Bool {
+//        if title.isBlank || author.isBlank || genre.isBlank || review.isBlank {
+//            return false
+//        }
+//        
+//        return true
+//    }
 }
