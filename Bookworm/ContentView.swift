@@ -32,6 +32,13 @@ struct ContentView: View {
     // Track whether the sheet is showing
     @State private var showingAddScreen = false
     
+    private let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        return formatter
+    }()
+    
     var body: some View {
         NavigationStack {
             //Text("Count: \(books.count)")
@@ -47,6 +54,8 @@ struct ContentView: View {
                                     .font(.headline)
                                     .foregroundColor(book.rating == 1 ? .red : .primary)
                                 Text(book.author)
+                                    .foregroundStyle(.secondary)
+                                Text(book.date, formatter: dateFormatter)
                                     .foregroundStyle(.secondary)
                             }
                         }
